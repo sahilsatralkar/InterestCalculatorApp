@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C46F2B72C722639000C8FDD /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C46F2B62C722639000C8FDD /* GraphView.swift */; };
+		1C46F2B92C722716000C8FDD /* CompoundInterestCalcForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C46F2B82C722716000C8FDD /* CompoundInterestCalcForm.swift */; };
+		1C46F2BC2C722769000C8FDD /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C46F2BB2C722769000C8FDD /* TabBarView.swift */; };
+		1C95D8E82C7B2AC900BADC39 /* CoumpoundInterestGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C95D8E72C7B2AC800BADC39 /* CoumpoundInterestGraph.swift */; };
+		1C95D8EA2C7B4DAC00BADC39 /* SimpleSavingsCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C95D8E92C7B4DAC00BADC39 /* SimpleSavingsCalculator.swift */; };
+		1C95D8EC2C7B4F0500BADC39 /* LoanCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C95D8EB2C7B4F0500BADC39 /* LoanCalculator.swift */; };
 		1CD243392C709EA700AE21AD /* InterestCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD243382C709EA700AE21AD /* InterestCalculatorApp.swift */; };
 		1CD2433B2C709EA700AE21AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD2433A2C709EA700AE21AD /* ContentView.swift */; };
 		1CD2433D2C709EA900AE21AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CD2433C2C709EA900AE21AD /* Assets.xcassets */; };
@@ -34,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C46F2B62C722639000C8FDD /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		1C46F2B82C722716000C8FDD /* CompoundInterestCalcForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundInterestCalcForm.swift; sourceTree = "<group>"; };
+		1C46F2BB2C722769000C8FDD /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		1C95D8E72C7B2AC800BADC39 /* CoumpoundInterestGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoumpoundInterestGraph.swift; sourceTree = "<group>"; };
+		1C95D8E92C7B4DAC00BADC39 /* SimpleSavingsCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSavingsCalculator.swift; sourceTree = "<group>"; };
+		1C95D8EB2C7B4F0500BADC39 /* LoanCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCalculator.swift; sourceTree = "<group>"; };
 		1CD243352C709EA700AE21AD /* InterestCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterestCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD243382C709EA700AE21AD /* InterestCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestCalculatorApp.swift; sourceTree = "<group>"; };
 		1CD2433A2C709EA700AE21AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +83,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C46F2BA2C72272B000C8FDD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1CD2433A2C709EA700AE21AD /* ContentView.swift */,
+				1C46F2B82C722716000C8FDD /* CompoundInterestCalcForm.swift */,
+				1C46F2B62C722639000C8FDD /* GraphView.swift */,
+				1C46F2BB2C722769000C8FDD /* TabBarView.swift */,
+				1C95D8E72C7B2AC800BADC39 /* CoumpoundInterestGraph.swift */,
+				1C95D8E92C7B4DAC00BADC39 /* SimpleSavingsCalculator.swift */,
+				1C95D8EB2C7B4F0500BADC39 /* LoanCalculator.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		1CD2432C2C709EA700AE21AD = {
 			isa = PBXGroup;
 			children = (
@@ -95,7 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				1CD243382C709EA700AE21AD /* InterestCalculatorApp.swift */,
-				1CD2433A2C709EA700AE21AD /* ContentView.swift */,
+				1C46F2BA2C72272B000C8FDD /* Views */,
 				1CD2433C2C709EA900AE21AD /* Assets.xcassets */,
 				1CD2433E2C709EA900AE21AD /* Preview Content */,
 			);
@@ -257,8 +283,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C46F2BC2C722769000C8FDD /* TabBarView.swift in Sources */,
 				1CD2433B2C709EA700AE21AD /* ContentView.swift in Sources */,
+				1C95D8EA2C7B4DAC00BADC39 /* SimpleSavingsCalculator.swift in Sources */,
+				1C95D8EC2C7B4F0500BADC39 /* LoanCalculator.swift in Sources */,
 				1CD243392C709EA700AE21AD /* InterestCalculatorApp.swift in Sources */,
+				1C46F2B72C722639000C8FDD /* GraphView.swift in Sources */,
+				1C46F2B92C722716000C8FDD /* CompoundInterestCalcForm.swift in Sources */,
+				1C95D8E82C7B2AC900BADC39 /* CoumpoundInterestGraph.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +457,7 @@
 				DEVELOPMENT_TEAM = HP6WDMAW63;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Connect to photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -458,6 +491,7 @@
 				DEVELOPMENT_TEAM = HP6WDMAW63;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Connect to photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
