@@ -22,7 +22,7 @@ struct TabBarView: View {
                 .tabItem {
                     Label("Simple Savings", systemImage: "percent")
                 }
-            Text("Setting")
+            SettingsView()
                 .tabItem {
                     Label("Settings", systemImage: "gear")
                 }
