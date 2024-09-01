@@ -111,7 +111,7 @@ struct SettingsView: View {
     }
     
     func tryOtherApps() {
-        guard let url = URL(string: "https://apps.apple.com/developer/your-developer-name/idf2115f1e-c63c-4bd6-b4b8-23579829b1ee")
+        guard let url = URL(string: "https://apps.apple.com/developer/SahilRameshSatralkar/idf2115f1e-c63c-4bd6-b4b8-23579829b1ee")
         else { return }
         UIApplication.shared.open(url)
     }
