@@ -32,7 +32,7 @@ struct SimpleSavingsView: View {
         NavigationView {
             VStack {
                 Form {
-                    Section(header: Text("Compound Interest")) {
+                    Section(header: Text("Interactive graph")) {
                         ZStack {
                             Chart {
                                 ForEach(0...debouncedYears, id: \.self) { year in
@@ -109,10 +109,10 @@ struct SimpleSavingsView: View {
                             }
                         }
                     }                    
-                    Section(header: Text("Parameters")) {
+                    Section(header: Text("Specifications")) {
                         VStack(alignment: .leading) {
                             Text("Monthly Deposit: $\(Int(monthlyDeposit))")
-                            Slider(value: $monthlyDeposit, in: 100...10000, step: 100) { _ in
+                            Slider(value: $monthlyDeposit, in: 100...20_000, step: 100) { _ in
                                 debounce(\.debouncedMonthlyDeposit, value: monthlyDeposit, timer: &monthlyDepositTimer)
                             }
                             .onChange(of: monthlyDeposit, {
@@ -148,7 +148,7 @@ struct SimpleSavingsView: View {
                     }
                 }
             }
-            .navigationTitle("Monthly Deposits")
+            .navigationTitle("Monthly Investment Calculator")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {

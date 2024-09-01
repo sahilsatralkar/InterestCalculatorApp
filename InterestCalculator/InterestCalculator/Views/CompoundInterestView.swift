@@ -107,7 +107,7 @@ struct CompoundInterestView: View {
                 Section(header: Text("Specifications")) {
                     VStack(alignment: .leading) {
                         Text("Principal: $\(Int(principal))")
-                        Slider(value: $principal, in: 500...500_000, step: 500) { _ in
+                        Slider(value: $principal, in: 500...200_000, step: 500) { _ in
                             debounce(\.debouncedPrincipal, value: principal, timer: &principalTimer)
                         }
                         .onChange(of: principal, {

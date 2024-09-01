@@ -34,7 +34,7 @@ struct LoanCalculatorView: View {
         NavigationView {
             VStack {
                 Form {
-                    Section(header: Text("Loan Calculator")) {
+                    Section(header: Text("Pie chart")) {
                         ZStack {
                             Chart(data, id: \.name) { name, value in
                                 SectorMark(angle: .value("Value", value))
@@ -50,10 +50,10 @@ struct LoanCalculatorView: View {
                         }
                     }
                     
-                    Section(header: Text("Parameters")) {
+                    Section(header: Text("Specifications")) {
                         VStack(alignment: .leading) {
-                            Text("Loan amount: $\(Int(loanAmount))")
-                            Slider(value: $loanAmount, in: 100...1000000, step: 100)
+                            Text("Principal: $\(Int(loanAmount))")
+                            Slider(value: $loanAmount, in: 500...100_000, step: 500)
                                 .onChange(of: loanAmount) {
                                     updateValues()
                                 }
