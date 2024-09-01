@@ -117,10 +117,10 @@
 			isa = PBXGroup;
 			children = (
 				1CD243382C709EA700AE21AD /* InterestCalculatorApp.swift */,
+				1C80BEF62C84FC3F006D67FC /* Extensions.swift */,
 				1C46F2BA2C72272B000C8FDD /* Views */,
 				1CD2433C2C709EA900AE21AD /* Assets.xcassets */,
 				1CD2433E2C709EA900AE21AD /* Preview Content */,
-				1C80BEF62C84FC3F006D67FC /* Extensions.swift */,
 			);
 			path = InterestCalculator;
 			sourceTree = "<group>";
