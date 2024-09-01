@@ -2,7 +2,7 @@ import SwiftUI
 import Charts
 import Photos
 
-struct CompoundInterestGraph: View {
+struct CompoundInterestView: View {
     @State private var principal = 10000.0
     @State private var interestRate = 8.0
     @State private var years = 30
@@ -160,7 +160,7 @@ struct CompoundInterestGraph: View {
         }
     }
     
-    func debounce<T>(_ keyPath: ReferenceWritableKeyPath<CompoundInterestGraph, T>, value: T, timer: inout Timer?) {
+    func debounce<T>(_ keyPath: ReferenceWritableKeyPath<CompoundInterestView, T>, value: T, timer: inout Timer?) {
         timer?.invalidate()
         timer = Timer.scheduledTimer(withTimeInterval: timeInterval, repeats: false) { _ in
             self[keyPath: keyPath] = value

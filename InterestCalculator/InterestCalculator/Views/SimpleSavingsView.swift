@@ -1,5 +1,5 @@
 //
-//  SimpleSavingsCalculator.swift
+//  SimpleSavingsView.swift
 //  InterestCalculator
 //
 //  Created by Sahil Satralkar on 25/08/24.
@@ -9,7 +9,7 @@ import SwiftUI
 import Charts
 import Photos
 
-struct MonthlyDepositGraph: View {
+struct SimpleSavingsView: View {
     @State private var monthlyDeposit = 500.0
     @State private var interestRate = 8.0
     @State private var years = 30
@@ -165,7 +165,7 @@ struct MonthlyDepositGraph: View {
         }
     }
     
-    func debounce<T>(_ keyPath: ReferenceWritableKeyPath<MonthlyDepositGraph, T>, value: T, timer: inout Timer?) {
+    func debounce<T>(_ keyPath: ReferenceWritableKeyPath<SimpleSavingsView, T>, value: T, timer: inout Timer?) {
         timer?.invalidate()
         timer = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false) { _ in
             self[keyPath: keyPath] = value

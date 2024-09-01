@@ -1,5 +1,5 @@
 //
-//  LoanCalculator.swift
+//  LoanCalculatorView.swift
 //  InterestCalculator
 //
 //  Created by Sahil Satralkar on 25/08/24.
@@ -9,7 +9,7 @@ import SwiftUI
 import Charts
 import Photos
 
-struct LoanCalculatorGraph: View {
+struct LoanCalculatorView: View {
     @State private var loanAmount = 20000.0
     @State private var interestRate = 5.0
     @State private var years = 10

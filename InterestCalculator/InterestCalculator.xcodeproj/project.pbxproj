@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C46F2B72C722639000C8FDD /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C46F2B62C722639000C8FDD /* GraphView.swift */; };
 		1C46F2BC2C722769000C8FDD /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C46F2BB2C722769000C8FDD /* TabBarView.swift */; };
 		1C80BEF32C848B5C006D67FC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C80BEF22C848B5C006D67FC /* SettingsView.swift */; };
-		1C95D8E82C7B2AC900BADC39 /* CompoundInterestGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C95D8E72C7B2AC800BADC39 /* CompoundInterestGraph.swift */; };
-		1C95D8EA2C7B4DAC00BADC39 /* SimpleSavingsCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C95D8E92C7B4DAC00BADC39 /* SimpleSavingsCalculator.swift */; };
-		1C95D8EC2C7B4F0500BADC39 /* LoanCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C95D8EB2C7B4F0500BADC39 /* LoanCalculator.swift */; };
+		1C95D8E82C7B2AC900BADC39 /* CompoundInterestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C95D8E72C7B2AC800BADC39 /* CompoundInterestView.swift */; };
+		1C95D8EA2C7B4DAC00BADC39 /* SimpleSavingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C95D8E92C7B4DAC00BADC39 /* SimpleSavingsView.swift */; };
+		1C95D8EC2C7B4F0500BADC39 /* LoanCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C95D8EB2C7B4F0500BADC39 /* LoanCalculatorView.swift */; };
 		1CD243392C709EA700AE21AD /* InterestCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD243382C709EA700AE21AD /* InterestCalculatorApp.swift */; };
 		1CD2433D2C709EA900AE21AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CD2433C2C709EA900AE21AD /* Assets.xcassets */; };
 		1CD243402C709EA900AE21AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CD2433F2C709EA900AE21AD /* Preview Assets.xcassets */; };
@@ -39,12 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C46F2B62C722639000C8FDD /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		1C46F2BB2C722769000C8FDD /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		1C80BEF22C848B5C006D67FC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		1C95D8E72C7B2AC800BADC39 /* CompoundInterestGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundInterestGraph.swift; sourceTree = "<group>"; };
-		1C95D8E92C7B4DAC00BADC39 /* SimpleSavingsCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSavingsCalculator.swift; sourceTree = "<group>"; };
-		1C95D8EB2C7B4F0500BADC39 /* LoanCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCalculator.swift; sourceTree = "<group>"; };
+		1C95D8E72C7B2AC800BADC39 /* CompoundInterestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundInterestView.swift; sourceTree = "<group>"; };
+		1C95D8E92C7B4DAC00BADC39 /* SimpleSavingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSavingsView.swift; sourceTree = "<group>"; };
+		1C95D8EB2C7B4F0500BADC39 /* LoanCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCalculatorView.swift; sourceTree = "<group>"; };
 		1CD243352C709EA700AE21AD /* InterestCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterestCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD243382C709EA700AE21AD /* InterestCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestCalculatorApp.swift; sourceTree = "<group>"; };
 		1CD2433C2C709EA900AE21AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,11 +82,10 @@
 		1C46F2BA2C72272B000C8FDD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1C46F2B62C722639000C8FDD /* GraphView.swift */,
 				1C46F2BB2C722769000C8FDD /* TabBarView.swift */,
-				1C95D8E72C7B2AC800BADC39 /* CompoundInterestGraph.swift */,
-				1C95D8E92C7B4DAC00BADC39 /* SimpleSavingsCalculator.swift */,
-				1C95D8EB2C7B4F0500BADC39 /* LoanCalculator.swift */,
+				1C95D8E72C7B2AC800BADC39 /* CompoundInterestView.swift */,
+				1C95D8E92C7B4DAC00BADC39 /* SimpleSavingsView.swift */,
+				1C95D8EB2C7B4F0500BADC39 /* LoanCalculatorView.swift */,
 				1C80BEF22C848B5C006D67FC /* SettingsView.swift */,
 			);
 			path = Views;
@@ -281,12 +278,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C46F2BC2C722769000C8FDD /* TabBarView.swift in Sources */,
-				1C95D8EA2C7B4DAC00BADC39 /* SimpleSavingsCalculator.swift in Sources */,
-				1C95D8EC2C7B4F0500BADC39 /* LoanCalculator.swift in Sources */,
+				1C95D8EA2C7B4DAC00BADC39 /* SimpleSavingsView.swift in Sources */,
+				1C95D8EC2C7B4F0500BADC39 /* LoanCalculatorView.swift in Sources */,
 				1C80BEF32C848B5C006D67FC /* SettingsView.swift in Sources */,
 				1CD243392C709EA700AE21AD /* InterestCalculatorApp.swift in Sources */,
-				1C46F2B72C722639000C8FDD /* GraphView.swift in Sources */,
-				1C95D8E82C7B2AC900BADC39 /* CompoundInterestGraph.swift in Sources */,
+				1C95D8E82C7B2AC900BADC39 /* CompoundInterestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
