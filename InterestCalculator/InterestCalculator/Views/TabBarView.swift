@@ -12,19 +12,19 @@ struct TabBarView: View {
         TabView {
             CompoundInterestView()
                 .tabItem {
-                    Label("Compound Interest", systemImage: "arrow.up.forward")
+                    Label("Compound Interest", systemImage: "arrow.up.right")
                 }
             LoanCalculatorView()
                 .tabItem {
-                    Label("Car loan", systemImage: "car")
+                    Label("Loan Calculator", systemImage: "plus.forwardslash.minus")
                 }
             SimpleSavingsView()
                 .tabItem {
-                    Label("Simple Savings", systemImage: "percent")
+                    Label("Simple Savings", systemImage: "arrow.turn.right.up")
                 }
             SettingsView()
                 .tabItem {
-                    Label("Settings", systemImage: "gear")
+                    Label("Settings", systemImage: "gear.circle")
                 }
         }
     }

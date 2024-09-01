@@ -27,7 +27,7 @@ struct CompoundInterestView: View {
         NavigationView {
             VStack {
                 Form {
-                    Section(header: Text("Compound Interest")) {
+                    Section(header: Text("Interactive Graph")) {
                         ZStack {
                             Chart {
                                 ForEach(0...debouncedYears, id: \.self) { year in
@@ -104,10 +104,10 @@ struct CompoundInterestView: View {
                             }
                         }
                     }
-                    Section(header: Text("Parameters")) {
+                    Section(header: Text("Specifications")) {
                         VStack(alignment: .leading) {
                             Text("Principal: $\(Int(principal))")
-                            Slider(value: $principal, in: 100...1000000, step: 100) { _ in
+                            Slider(value: $principal, in: 500...500_000, step: 500) { _ in
                                 debounce(\.debouncedPrincipal, value: principal, timer: &principalTimer)
                             }
                             .onChange(of: principal, {
@@ -143,7 +143,7 @@ struct CompoundInterestView: View {
                     }
                 }
             }
-            .navigationTitle("Compound Interest")
+            .navigationTitle("Compound Interest Calculator")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
