@@ -83,14 +83,9 @@ struct LoanCalculatorView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: shareGraph) {
+                    Button(action: shareScreen) {
                         Image(systemName: "square.and.arrow.up")
                     }
-                }
-            }
-            .sheet(isPresented: $isShareSheetForLoanCalculPresented) {
-                if let image = capturedImage {
-                    ShareSheetForLoanCalcul(activityItems: [image])
                 }
             }
         }
@@ -121,45 +116,4 @@ struct LoanCalculatorView: View {
     func calculateTotalInterest() -> Double {
         return calculateTotalPayment() - debouncedLoanAmount
     }
-    
-    func shareGraph() {
-        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-              let window = windowScene.windows.first,
-              let rootView = window.rootViewController?.view else {
-            return
-        }
-        
-        let renderer = UIGraphicsImageRenderer(size: rootView.bounds.size)
-        let image = renderer.image { _ in
-            rootView.drawHierarchy(in: rootView.bounds, afterScreenUpdates: true)
-        }
-        
-        // Save the image to Photos
-        saveImageToPhotos(image: image)
-        
-        capturedImage = image
-        isShareSheetForLoanCalculPresented = true
-    }
-    
-    func saveImageToPhotos(image: UIImage) {
-        PHPhotoLibrary.requestAuthorization { status in
-            if status == .authorized {
-                UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-            } else {
-                print("Photo library access not granted.")
-            }
-        }
-    }
 }
-
-struct ShareSheetForLoanCalcul: UIViewControllerRepresentable {
-    var activityItems: [Any]
-    var applicationActivities: [UIActivity]? = nil
-    
-    func makeUIViewController(context: Context) -> UIActivityViewController {
-        UIActivityViewController(activityItems: activityItems, applicationActivities: applicationActivities)
-    }
-    
-    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {}
-}
-
