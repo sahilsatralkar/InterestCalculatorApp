@@ -46,42 +46,22 @@ struct SettingsView: View {
                             openTermsAndConditions()
                         }
                 }
-                Section {
-                    SettingsLabelRow(icon: "person.fill", color: .mint, text: "About me")
-                        .onTapGesture {
-                            contactUs()
-                        }
-                    SettingsLabelRow(icon: "hand.thumbsup.fill", color: .orange, text: "Try my other apps")
-                        .onTapGesture {
-                            tryOtherApps()
-                        }
-                }
-                Section(header: Text(LocalizedStringKey("About")), footer:
-                            Text(LocalizedStringKey("Made with love by Sahil Satralkar"))
-                            .frame(maxWidth: .infinity, alignment: .center)
-                ){
-                    
-                    NavigationLink(
-                        destination: Text("Additional info")){
-                            SettingsLabelRow(icon: "text.bubble", color: .green, text: "Additional information")
-                    }
-                }
             }
             .listStyle(InsetGroupedListStyle())
             .navigationTitle("Settings")
-            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarTitleDisplayMode(.automatic)
         }
     }
     
     func rateApp() {
-        guard let writeReviewURL = URL(string: "https://apps.apple.com/app/id<YOUR_APP_ID>?action=write-review")
+        guard let writeReviewURL = URL(string: "https://apps.apple.com/app/id6689020719?action=write-review")
         else { return }
         UIApplication.shared.open(writeReviewURL, options: [:], completionHandler: nil)
     }
     
     func shareApp() {
         //TODO: Replace App id with correct value
-        guard let url = URL(string: "https://apps.apple.com/app/id1551311809")
+        guard let url = URL(string: "https://apps.apple.com/app/id6689020719")
         else { return }
         if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
            let rootViewController = windowScene.windows.first?.rootViewController {
@@ -92,14 +72,14 @@ struct SettingsView: View {
     }
     
     func contactUs() {
-        guard let email = "sahil.satralkar@gmail.com".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
+        guard let email = "help.investmentcalculators@gmail.com".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
               let url = URL(string: "mailto:\(email)")
         else { return }
         UIApplication.shared.open(url)
     }
     
     func openPrivacyPolicy() {
-        guard let url = URL(string: "https://www.yourapp.com/privacy-policy")
+        guard let url = URL(string: "https://sites.google.com/view/investment-calc-privacypolicy/home")
         else { return }
         UIApplication.shared.open(url)
     }
