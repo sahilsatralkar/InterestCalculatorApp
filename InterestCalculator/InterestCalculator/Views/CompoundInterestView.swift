@@ -35,6 +35,7 @@ struct CompoundInterestView: View {
                                     x: .value("Year", year),
                                     y: .value("Amount", calculateCompoundInterest(year: year))
                                 )
+                                .lineStyle(StrokeStyle(lineWidth: 4, lineCap: .round))
                             }
                             if let selectedX = selectedX, let selectedY = selectedY {
                                 PointMark(
