@@ -453,8 +453,8 @@
 				DEVELOPMENT_TEAM = HP6WDMAW63;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Investment Calculators";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Permission to access Photos";
+				INFOPLIST_KEY_CFBundleDisplayName = "Finance Calculator";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please provide permission so that images can be saved in Photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -465,7 +465,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.4;
+				MARKETING_VERSION = 0.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sahil.satralkar.InterestCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -488,8 +488,8 @@
 				DEVELOPMENT_TEAM = HP6WDMAW63;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Investment Calculators";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Permission to access Photos";
+				INFOPLIST_KEY_CFBundleDisplayName = "Finance Calculator";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please provide permission so that images can be saved in Photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -500,7 +500,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.4;
+				MARKETING_VERSION = 0.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sahil.satralkar.InterestCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
