@@ -40,7 +40,7 @@ struct LoanCalculatorView: View {
                                 SectorMark(angle: .value("Value", value))
                                     .foregroundStyle(by: .value("Category", name))
                                     .annotation(position: .overlay) {
-                                        Text("\(name): \(Int(value))")
+                                        Text("\(name):\n\(Int(value))")
                                             .font(.caption)
                                             .foregroundColor(.white)
                                     }
