@@ -4,10 +4,11 @@ import Photos
 import StoreKit
 
 struct CompoundInterestView: View {
+    
+    //Constants
     @State private var principal = 10000.0
     @State private var interestRate = 8.0
     @State private var years = 30
-    
     @State private var debouncedPrincipal = 10000.0
     @State private var debouncedInterestRate = 8.0
     @State private var debouncedYears = 30
