@@ -1,4 +1,7 @@
 # InterestCalculatorApp
+
+App Store link: https://apps.apple.com/us/app/investment-calculators/id6689020719
+
 Interest Calculator App
 
 
